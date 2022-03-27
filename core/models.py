@@ -8,6 +8,7 @@ class Post(models.Model):
         verbose_name_plural = "Postlar"
 
     nomi = models.CharField(max_length=50)
+    ovozlarSoni = models.IntegerField(max_length=10)
     mazmuni = models.TextField()
 
     def __str__(self):
